@@ -1,8 +1,22 @@
 package org.projects_nj.models;
 
-public class Operator {
-    private String id;
-    private String operatorNumber;
-    private String EmployeeId;
-    private String phone;
+public class Operator extends BaseModel{
+    private String Name;
+    private int EmployeeId;
+
+    public String getName() {
+        return Name;
+    }
+
+    public void setName(String name) {
+        Name = name;
+    }
+
+    public int getEmployeeId() {
+        return EmployeeId;
+    }
+
+    public void setEmployeeId(int employeeId) {
+        EmployeeId = employeeId;
+    }
 }
